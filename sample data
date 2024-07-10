@@ -1,32 +1,73 @@
 register data
-id:668d05422968bb1f35d29de1
-name:"surjith"
-number:9080326477
-email:"gokulsurjith@gmail.com"
-password:"$2b$10$RU3.7ALi3n5rr2qXVRZ38uLH7ZcdpaREiSzsKuUbXmG4dy275n/MW"
-confirmPassword:"$2b$10$RU3.7ALi3n5rr2qXVRZ38uLH7ZcdpaREiSzsKuUbXmG4dy275n/MW"
-role:"Customer"
-Image:"https://res.cloudinary.com/dw4v8vpnz/image/upload/v1720517912/cvh6zjmc…"
-createdAt:2024-07-09T09:39:14.998+00:00
-updatedAt:2024-07-09T09:39:14.998+00:00
+customer data
+{
+  "id": "668d05422968bb1f35d29de1",
+  "name": "surjith",
+  "number": 9080326477,
+  "email": "gokulsurjith@gmail.com",
+  "password": "$2b$10$RU3.7ALi3n5rr2qXVRZ38uLH7ZcdpaREiSzsKuUbXmG4dy275n/MW",
+  "confirmPassword": "$2b$10$RU3.7ALi3n5rr2qXVRZ38uLH7ZcdpaREiSzsKuUbXmG4dy275n/MW",
+  "role": "Customer",
+  "image": "https://res.cloudinary.com/dw4v8vpnz/image/upload/v1720517912/cvh6zjmc…",
+  "createdAt": "2024-07-09T09:39:14.998+00:00",
+  "updatedAt": "2024-07-09T09:39:14.998+00:00"
+}
 
-_id
-668d06ca2968bb1f35d29ded
-name
-"rajesh"
-number
-908045456
-email
-"rajesh@gmail.com"
-password
-"$2b$10$BZnwGlqmNQ6hEnzAvrJcYOyOmWlHaQ79iKGBHXoEFxVte6UfQRArG"
-confirmPassword
-"$2b$10$BZnwGlqmNQ6hEnzAvrJcYOyOmWlHaQ79iKGBHXoEFxVte6UfQRArG"
-role
-"Owner"
-createdAt
-2024-07-09T09:45:46.794+00:00
-updatedAt
-2024-07-09T09:45:46.794+00:00
-__v
-0
+
+owner data
+{
+  "_id": "668d06ca2968bb1f35d29ded",
+  "name": "rajesh",
+  "number": 908045456,
+  "email": "rajesh@gmail.com",
+  "password": "$2b$10$BZnwGlqmNQ6hEnzAvrJcYOyOmWlHaQ79iKGBHXoEFxVte6UfQRArG",
+  "confirmPassword": "$2b$10$BZnwGlqmNQ6hEnzAvrJcYOyOmWlHaQ79iKGBHXoEFxVte6UfQRArG",
+  "role": "Owner",
+  "createdAt": "2024-07-09T09:45:46.794+00:00",
+  "updatedAt": "2024-07-09T09:45:46.794+00:00"
+}
+
+service data
+{
+  "_id": "668d3d942968bb1f35d29df7",
+  "userId": "668d06ca2968bb1f35d29ded",
+  "email": "rajesh@gmail.com",
+  "service": "oil change",
+  "amount": 222,
+  "createdAt": "2024-07-09T13:39:32.336+00:00",
+  "updatedAt": "2024-07-09T13:39:32.336+00:00",
+  "__v": 0
+}
+{
+  "_id": "668d3d942968bb1f35d29df7",
+  "userId": "668d06ca2968bb1f35d29ded",
+  "email": "rajesh@gmail.com",
+  "service": "bike wash",
+  "amount": 222,
+  "createdAt": "2024-07-09T13:39:32.336+00:00",
+  "updatedAt": "2024-07-09T13:39:32.336+00:00",
+  "__v": 0
+}
+  Booking data
+{
+  "_id": "668d49fd7ebf9f5b52b70a33",
+  "userId": "668d05422968bb1f35d29de1",
+  "email": "gokulsurjith@gmail.com",
+  "items": [
+    {
+      "service": "Oil change",
+      "amount": 222,
+      "_id": "668d49fd7ebf9f5b52b70a34"
+    },
+    {
+      "service": "Oil change",
+      "amount": 333,
+      "_id": "668d49fd7ebf9f5b52b70a35"
+    }
+  ],
+  "date": "2024-07-04T00:00:00.000+00:00",
+  "status": "completed",
+  "totalAmount": 555,
+  "createdAt": "2024-07-09T14:32:29.911+00:00",
+  "updatedAt": "2024-07-10T01:20:40.790+00:00"
+}
