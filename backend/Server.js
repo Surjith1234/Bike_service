@@ -4,9 +4,9 @@ const cors=require('cors') //to enable the access to frontend and backend
 const mongoose=require('mongoose')
 app.use(cors())
 app.use(express.json())
-const connect=async()=>{// toi connect the database
+const connect=async()=>{// to connect the database
     try {
-        await mongoose.connect('mongodb://127.0.0.1:27017/service-app')
+        await mongoose.connect('mongodb+srv://surjith:surjith2003@cluster0.pw1ezze.mongodb.net/service?retryWrites=true&w=majority&appName=Cluster0')
         console.log("connected");
     }
     catch(err)
