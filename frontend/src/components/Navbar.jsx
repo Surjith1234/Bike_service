@@ -17,7 +17,7 @@ const Navbar = () => {
     <div className=' container mx-auto flex items-center justify-between'>
    <img src={Logo} className='h-[40px] w-[30px] cursor-pointer'/>
     <div className='lg:flex hidden gap-8 items-center'>
-    <a href='' className='text-xl font-medium hover:text-red-500'><Link to='/home'>Home</Link></a>
+    <a href='' className='text-xl font-medium hover:text-red-500'><Link to='/'>Home</Link></a>
     {
       user?.user?.role==='Owner' && <a href='' className='text-xl font-medium hover:text-red-500'><Link to='/addservice'>Add Services</Link></a> //onclick navigate to addservice page if user is owner
     }
